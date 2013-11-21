@@ -1,0 +1,63 @@
+/* 
+    Document   : styles
+    Created on : Jun 8, 2013, 11:48:22 AM
+    Author     : kosh
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.main{
+    
+  float: right;
+    padding-left: 3%;
+   padding-right: 57%;
+}
+.offer{  
+   
+  float: right;
+    padding-left: 3%;
+   padding-right: 61%;
+}
+.side{
+    
+    float: left;
+    padding-right: 5%;
+    padding-bottom: 40%;
+    font-size: 150%;
+    padding-top: 2%;
+    background-color: yellow;
+    
+}
+
+.title{
+    
+    background-color: green;
+    font-size: 400%;
+        padding-left: 40%;
+}
+
+.login{
+    
+    float: right;
+     padding-left: 3%;
+   padding-right: 40%;
+   margin-top: 5%;
+   font-size: 150%;
+}
+
+.rec{
+    
+    float: right;
+    margin-right: 73%;
+    font-size: 120%;
+}
+.search{
+    
+    float: right;
+     margin-right: 70%;
+     margin-top: 3%;
+}

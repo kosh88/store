@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <resource-ref>
+        <description>jdbc:derby://localhost:1527/sample</description>
+        <res-ref-name>webtables</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+    <resource-ref>
+        <description>jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=convertToNull</description>
+        <res-ref-name>webtable</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+    <resource-ref>
+        <description>jdbc:mysql://localhost:3306/mysql?zeroDateTimeBehavior=convertToNull</description>
+        <res-ref-name>web</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+    <resource-ref>
+        <description>jdbc:mysql://localhost:3306/web?zeroDateTimeBehavior=convertToNull</description>
+        <res-ref-name>vla</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+    </resource-ref>
+</web-app>
